@@ -1,0 +1,11 @@
+
+<% @entries.each do |entry| %>
+  <h1><%= entry.title %></h1>
+  <i>published at <%= entry.published %></i>
+  <p>
+    <%= entry.content.html_safe %>
+  </p>
+  <hr />
+<% end %>
+
+<%= link_to 'Back', feeds_path %>
