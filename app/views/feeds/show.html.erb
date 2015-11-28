@@ -1,5 +1,5 @@
 <div class="container">
-  <h3> There are <%= link_to "#{@feed.entries.count} entries", entries_feed_path %> available for the feed <%= @feed.name %></h3>
+  <h3> There are <%= link_to "#{@feed.entries.count} entries", entries_path %> available for the feed <%= @feed.name %></h3>
   <hr />
   <%= link_to 'Edit', edit_feed_path %>
   <%= link_to 'Back', feeds_path %>

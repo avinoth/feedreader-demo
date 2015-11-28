@@ -1,2 +1,7 @@
-<h1>Entries#show</h1>
-<p>Find me in app/views/entries/show.html.erb</p>
+<div class="container">
+  <h3><%= link_to @entry.title, @entry.url %></h3>
+  <i>published on <%= @entry.published %> by <%= @entry.author %></i>
+  <p>
+    <%= @entry.content.html_safe %>
+  </p>
+</div>

@@ -1,2 +1,9 @@
-<h1>Entries#index</h1>
-<p>Find me in app/views/entries/index.html.erb</p>
+<div class="container">
+  <% @entries.each do |entry| %>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= link_to entry.title, entry %> - <i> published <%= time_ago_in_words(entry.published) %> ago.</i>
+      </div>
+    </div>
+  <% end %>
+</div>
