@@ -10,8 +10,6 @@ class FeedsController < ApplicationController
   # GET /feeds/1
   # GET /feeds/1.json
   def show
-    feed = Feedjira::Feed.fetch_and_parse @feed.url
-    @entries = feed.entries
   end
 
   # GET /feeds/new
